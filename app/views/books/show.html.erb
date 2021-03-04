@@ -11,8 +11,9 @@
     <div class='col-md-8 offset-md-1'>
 
       <!--bookの詳細を表示する為のレンダー-->
-      <%= render 'book_detailed_information', book: @book %>
-
+      <div id="book_detaile">
+        <%= render 'book_detailed_information', book: @book %>
+      </div>
 
       <!--コメント一覧のレンダー-->
       <div id="comments_list" class="comments my-5">

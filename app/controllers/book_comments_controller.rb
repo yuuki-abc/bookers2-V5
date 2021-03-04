@@ -6,8 +6,7 @@ class BookCommentsController < ApplicationController
     @new_book_comment = BookComment.new
     comment = current_user.book_comments.new(book_comment_params)
     comment.book_id = @book.id
-    if comment.save
-    else
+    unless comment.save
       flash[:alert] = "No blanks"
       redirect_back(fallback_location: root_path)
     end
