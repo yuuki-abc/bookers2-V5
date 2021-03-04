@@ -21,12 +21,9 @@
       </div>
 
       <div class="new-comment">
-
-        <div id="comments_field_flash">
-          <%= render 'layouts/flash', flash: flash %>
-        </div>
-
-        <div id="comments_field"><!--コメントフォームのレンダー-->
+        <%= render 'layouts/flash', flash: flash %>
+        <div id="comments_field">
+          <!--コメントフォームのレンダー-->
           <%= render 'book_comments/book_comments_field', {book: @book, book_comment: @book_comment} %>
         </div>
       </div>
