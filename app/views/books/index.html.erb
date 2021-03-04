@@ -2,7 +2,7 @@
 
   <div class="row">
     <% if @book.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="pb-3">
         <h3><%= @book.errors.count %> errors prohibited this book from being saved:</h3>
         <ul>
             <% @book.errors.full_messages.each do |message| %>
@@ -11,7 +11,7 @@
         </ul>
     </div>
     <% end %>
-  </div> <!-- "row" の終了タグ-->
+  </div>
 
   <div class='row'>
     <div class='col-md-3'>

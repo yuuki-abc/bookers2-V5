@@ -33,9 +33,11 @@
         <%= render 'book_comments/book_comments_list', book: @book %>
       </div>
 
+      <!--エラーメッセージ用のレンダー-->
       <div class="new-comment">
       <%= render 'layouts/flash', flash: flash %>
 
+      <!--コメントフォームのレンダー-->
       <div id="comments_field">
         <%= render 'book_comments/book_comments_field', {book: @book, book_comment: @book_comment} %>
       </div>
