@@ -21,7 +21,6 @@
       </div>
 
       <div class="new-comment">
-        <%= render 'layouts/flash', flash: flash %>
         <div id="comments_field">
           <!--コメントフォームのレンダー-->
           <%= render 'book_comments/book_comments_field', {book: @book, book_comment: @book_comment} %>
